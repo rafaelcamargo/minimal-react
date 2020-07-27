@@ -5,8 +5,8 @@ const Home = () => {
   const routes = ['Binding', 'Conditionals', 'Repetitions', 'Mount', 'Unmount'];
 
   const buildLinks = () => {
-    return routes.map(route => (
-      <li>
+    return routes.map((route, index) => (
+      <li key={ index }>
         <NavLink to={ `/${route.toLowerCase()}` }>
           { route }
         </NavLink>

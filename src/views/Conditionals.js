@@ -4,7 +4,7 @@ const Conditionals = () => {
   const [visitorName, setVisitorName] = useState();
 
   const handleName = evt => {
-    setVisitorName(evt.currentTarget.value);
+    setVisitorName(evt.target.value);
   };
 
   const buildGreeting = name => {

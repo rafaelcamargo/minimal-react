@@ -4,7 +4,7 @@ const Binding = () => {
   const [name, setName] = useState();
 
   const onNameChange = evt => {
-    setName(evt.currentTarget.value);
+    setName(evt.target.value);
   };
 
   return (
@@ -13,7 +13,7 @@ const Binding = () => {
         Name
       </label>
       <div>
-        <input type="text" onChange={ onNameChange }/>
+        <input type="text" onChange={ onNameChange } />
       </div>
       <div>
         Name: { name }

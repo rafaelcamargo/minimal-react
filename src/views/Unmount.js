@@ -2,10 +2,13 @@ import React, { useEffect } from 'react';
 
 const Unmount = () => {
   const alertPageHeading = () => {
-    const heading = document.querySelector('h1');
-    if(heading)
-      window.alert(heading.textContent);
+    window.alert(getPageHeading());
   };
+
+  function getPageHeading(){
+    const heading = document.querySelector('h1');
+    return heading && heading.textContent;
+  }
 
   useEffect(() => {
     document.addEventListener('click', alertPageHeading);
