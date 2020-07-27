@@ -1,6 +1,9 @@
 # Minimal React
 > The smallest possible React app config
 
+[![CircleCI](https://circleci.com/gh/rafaelcamargo/minimal-react/tree/master.svg?style=svg)](https://circleci.com/gh/rafaelcamargo/minimal-react/tree/master)
+[![Coverage Status](https://coveralls.io/repos/github/rafaelcamargo/minimal-react/badge.svg?branch=master)](https://coveralls.io/github/rafaelcamargo/minimal-react?branch=master)
+
 ## Contributing
 
 1. Install [Node](https://nodejs.org/en/). Download the "Recommend for Most Users" version.
