@@ -5,7 +5,7 @@ import Unmount from './Unmount';
 describe('Unmount', () => {
   it('should set click listener on document on mount', async () => {
     window.alert = jest.fn();
-    const { unmount } = render(<Unmount />);
+    render(<Unmount />);
     fireEvent.click(document);
     expect(window.alert).toHaveBeenCalledWith('Playground');
   });
